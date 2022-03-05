@@ -1,5 +1,5 @@
-class AcGameMenu{
-    constructor(root){
+class AcGameMenu {
+    constructor(root) {
         this.root = root;
         this.$menu = $(`
 <div class="ac-game-menu">
@@ -17,7 +17,7 @@ class AcGameMenu{
         </div>
     </div>
 </div>
-`)
+`);
         this.root.$ac_game.append(this.$menu);
         this.$single_mode = this.$menu.find('.ac-game-menu-field-item-single-mode');
         this.$multi_mode = this.$menu.find('.ac-game-menu-field-item-multi-mode');
